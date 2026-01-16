@@ -1,5 +1,9 @@
 /* ===== GLOBAL STYLES ===== */
 
+:root {
+  --nav-height: 72px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +38,7 @@ body {
     z-index: 1000;
     padding: 1rem 0;
     transition: all 0.3s ease;
+     height: var(--nav-height);
 }
 
 .nav-container {
@@ -188,7 +193,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding: 100px;
+    padding: 120px 20px 80px;
    
 }
 
@@ -2815,7 +2820,8 @@ body {
 }
 @media (max-width: 768px) {
     .hero {
-        padding-top: 120px; /* navbar + jarak aman */
+        padding: 100px 16px 60px;
+    min-height: auto; /* navbar + jarak aman */
     }
 }
 /* ===== STEPS SECTION ===== */
@@ -3020,4 +3026,14 @@ body {
 .btn-login:hover {
     background: rgba(255, 107, 53, 0.1);
     color: #e55a2b;
+}
+@media (max-width: 768px) {
+  .hero-image img,
+  .hero-images img,
+  .hero-imagen img {
+    width: 100%;
+    max-width: 320px;
+    transform: none;
+    margin: 0 auto;
+  }
 }
